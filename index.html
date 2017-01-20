@@ -75,11 +75,9 @@
             <div class="content">
                 <h1>Yidong Huang</h1>
             </div>
-            <br>Software Developer</br>
-            <br>Beginner in Machine Learning</br>
-            <a href="#education" class="down-btn page-scroll">
-                <span class="fa fa-angle-down"></span>
-            </a>
+            <div class="header-text btn">
+                    <h1><span id="head-title"></span></h1>
+            </div>
         </div>
     </div>
 
@@ -92,7 +90,7 @@
                         <h2>Experience</h2>
                         <hr>
                     </div>
-                    <object data="YidongHuangResume.pdf#zoom=scale" type="application/pdf" width="180%" height="500px" style="margin-left:-225px" align="left">
+                    <object data="YidongHuangResume.pdf" type="application/pdf" width="180%" height="800px" style="margin-left:-235px" align="left">
                     </object>
                     <p class="lead">A copy of the CV can also be found <a href="YidongHuangResume.pdf">here</a></p>
                     <a href="#services" class="down-btn page-scroll">
@@ -149,12 +147,6 @@
         </div>
     </div>
 
-    <!-- Call-to-Action Section -->
-    <div id="cta">
-        <div class="container text-center">
-            <a href="#" class="btn go-to-btn">Check our shop</a>
-        </div>
-    </div>
 
     <!-- Portfolio Section -->
     <div id="works">
@@ -231,11 +223,6 @@
             </div>
         </div>
         <div class="space"></div>
-        <div class="text-center">
-            <a href="#" class="btn read-more-btn">Check on Dribbble</a>
-            <br>
-            <a href="#about-us" class="down-btn page-scroll"><span class="fa fa-angle-down"></span></a>
-        </div>
     </div>
 
 
@@ -244,7 +231,7 @@
     <div id="contact">
         <div class="container">
             <div class="section-title text-center">
-                <h2>Contact Us</h2>
+                <h2>Contact Me</h2>
                 <hr>
             </div>
             <div class="space"></div>
@@ -253,35 +240,27 @@
                 <div class="col-md-3">
                     <address>
                         <strong>Address</strong><br>
-                        <br>
                         210 N Charter Street<br>
                         53715, WI, Madison<br>
                         Phone: (608)770-7892
-                        <ul class="social">
-                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                            <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
-                          </ul>
                     </address>
                 </div>
 
                 <div class="col-md-9">
-                    <form autocomplete="off">
+                    <form method="POST" action="email.php">
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <input type="text" class="form-control" name="name" placeholder="Your Name">
                                 <input type="text" class="form-control" placeholder="Phone No.">
                             </div>
                             <div class="col-md-6">
                                 <input type="text" class="form-control" placeholder="Email">
-                                <input type="text" class="form-control" placeholder="Subject">
-                            </div>
+                                <input type="text" class="form-control" placeholder="Subject" name="Subject">
+                           </div>
                         </div>
-                        <textarea class="form-control" rows="4" placeholder="Message"></textarea>
-                        <div class="text-right">
-                            <a href="#" class="btn send-btn">Send</a>
-                        </div>
+                        <textarea class="form-control" rows="4" name="Message" placeholder="Message"></textarea>
+                        <input type="submit" value="SEND" style="background-color:#c59a6d; <font color='black'>">
+                        
                     </form>
                 </div>
             </div>
@@ -310,8 +289,8 @@
     <script>
       $(function(){
           $("#head-title").typed({
-            strings: ["We make websites^1000", "24/7 available for hire^1000" ,"Web design with diffence^1000"],
-            typeSpeed: 100,
+            strings: ["Software Developer^1000", "Beginner in Machine Learning^1000"],
+            typeSpeed: 50,
             loop: true,
             startDelay: 100
           });

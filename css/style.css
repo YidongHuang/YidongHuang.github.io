@@ -63,7 +63,7 @@ a:focus{
 .center{
     position: fixed;
     top:50%;
-    left:50%;
+    left:50%
 }
 #home{
 	background: url(../img/bg1.jpg);
